@@ -1,0 +1,32 @@
+{
+    "name": "novay/key",
+    "description": "My Personal Key.",
+    "keywords": [
+        "novay",
+        "key"
+    ],
+    "homepage": "https://github.com/novay/key",
+    "license": "MIT",
+    "type": "project",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Noviyanto Rahmadi",
+            "email": "novay@btekno.id",
+            "role": "Developer"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Novay\\Key\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Novay\\Key\\Providers\\KeyServiceProvider"
+            ]
+        }
+    }
+}
