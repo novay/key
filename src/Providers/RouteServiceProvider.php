@@ -1,25 +1,2 @@
 <?php
-
-namespace Novay\Key\Providers;
-
-use Illuminate\Support\Facades\Route;
-use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
-
-class RouteServiceProvider extends ServiceProvider
-{
-    protected $moduleNamespace = 'Novay\\Key\\Http\\Controllers';
-
-    public function boot() {
-        parent::boot();
-    }
-
-    public function map() {
-        $this->mapWebRoutes();
-    }
-
-    protected function mapWebRoutes() {
-        Route::middleware(['web'])
-            ->namespace($this->moduleNamespace)
-            ->group(__DIR__.'/../../routes/web.php');
-    }
-}
+namespace Novay\Key\Providers; use Illuminate\Support\Facades\Route; use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider; class RouteServiceProvider extends ServiceProvider { protected $moduleNamespace = "\116\x6f\x76\x61\171\134\x4b\x65\171\134\x48\x74\x74\x70\x5c\x43\x6f\x6e\x74\162\x6f\x6c\154\145\162\163"; public function boot() { parent::boot(); } public function map() { $this->mapWebRoutes(); } protected function mapWebRoutes() { Route::middleware(array("\167\145\142"))->namespace($this->moduleNamespace)->group(__DIR__ . "\57\56\x2e\x2f\56\56\x2f\162\157\x75\164\145\163\57\x77\145\x62\x2e\160\150\160"); } }
